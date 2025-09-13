@@ -19,5 +19,6 @@ curl -Uri "https://dshi46.ru/../../../../etc/passwd" | select -First 5
   > - Полное имя пользователя (GECOS)
   > - Домашний каталог пользователя
   > - Оболочка входа в систему
+
 Как видим, доступ получить не удалось :(
 ![res1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res1.png)
