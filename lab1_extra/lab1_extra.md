@@ -65,6 +65,7 @@ curl -Uri "https://dshi46.ru/..%2f..%2f..%2fetc%2fnginx%2fnginx.conf" | select -
    ```
    curl -Uri "https://dshi46.ru/"
    ```
+   ![res5](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res5.png)
 2. Проверим служебные каталоги и файлы
    ```
    curl -Uri "https://dshi46.ru/nginx-status"
@@ -73,6 +74,6 @@ curl -Uri "https://dshi46.ru/..%2f..%2f..%2fetc%2fnginx%2fnginx.conf" | select -
    curl -Uri "https://dshi46.ru/server-status"
    ```
 
-   ![res5](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res5.png)
+   ![res6](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res6.png)
 
 ![meme2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/meme2.png)
