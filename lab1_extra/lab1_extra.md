@@ -48,10 +48,31 @@ curl -Uri "https://dshi46.ru/..%2f..%2f..%2fetc%2fnginx%2fnginx.conf" | select -
    ```
 7. В результате у нас есть доступ к странице для входа в аккаунт админа, но это не является уязимостью
 8. А также на сервере существуют папки documents, stat и images к которым доступа нет
+   ![res3](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res3.png)
 9. С помощью команд
     ```
     ffuf -u https://dshi46.ru/stat/FUZZ -w "C:\Users\User\Downloads\common.txt" -mc 200,403 -t 10
     ffuf -u https://dshi46.ru/documents/FUZZ -w "C:\Users\User\Downloads\common.txt" -mc 200,403 -t 10
     ffuf -u https://dshi46.ru/documents/FUZZ -w "C:\Users\User\Downloads\common.txt" -mc 200,403 -t 10
     ```
+    ![res4](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res4.png)
+    
    проверили содержимое каталогов и код у файлов. Ничего лишнего вне рабочего каталога index нам не оказалось доступным.
+
+## Раскрытие информации (Information Disclosure)
+*Анализ HTTP-заголовков и проверка стандартных мест*
+1. Проверим заголовки ответа
+   ```
+   curl -Uri "https://dshi46.ru/"
+   ```
+2. Проверим служебные каталоги и файлы
+   ```
+   curl -Uri "https://dshi46.ru/nginx-status"
+   curl -Uri "https://dshi46.ru/.env"        
+   curl -Uri "https://dshi46.ru/.git/config"  
+   curl -Uri "https://dshi46.ru/server-status"
+   ```
+
+   ![res5](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res5.png)
+
+![meme2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/meme2.png)
