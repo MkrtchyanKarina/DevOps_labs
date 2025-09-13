@@ -20,5 +20,9 @@ curl -Uri "https://dshi46.ru/../../../../etc/passwd" | select -First 5
   > - Домашний каталог пользователя
   > - Оболочка входа в систему
 
-Как видим, доступ получить не удалось :(
 ![res1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res1.png)
+
+Попробуем закодировать символы ( %2f = / и, если сервер вдруг на Windows: %5c = \ ), а также получить файл с конфигурациями nginx
+![res2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res2.png)
+
+Как видим, доступ получить не удалось :(
