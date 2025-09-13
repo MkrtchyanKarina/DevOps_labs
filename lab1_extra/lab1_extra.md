@@ -31,7 +31,7 @@ curl -Uri "https://dshi46.ru/..%5c..%5c..%5c..%5cetc%2fpasswd" | select -First 5
 curl -Uri "https://dshi46.ru/..%2f..%2f..%2fetc%2fnginx%2fnginx.conf" | select -First 5
 ```
 
-![res2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res2.png)
+![res2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res2.jpg)
 
 Как видим, доступ получить не удалось :(
 
