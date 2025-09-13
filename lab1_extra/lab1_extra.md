@@ -1,5 +1,6 @@
 # Лабораторная работа №1 - со звёздочкой :star2:
 ![meme1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/meme1.jpg)
+За основу мы взяли сайт [школы искусств](https://dshi46.ru/)
 ## Path traversal (обход пути)
 *Уязвимость в веб-приложениях, позволяющая злоумышленнику получить несанкционированный доступ к файлам и директориям на сервере, находящимся за пределами разрешенного корневого каталога.*
 1. Установим curl 
@@ -32,3 +33,24 @@ curl -Uri "https://dshi46.ru/..%2f..%2f..%2fetc%2fnginx%2fnginx.conf" | select -
 ![res2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res2.png)
 
 Как видим, доступ получить не удалось :(
+
+## FFUF
+*мощный инструмент командной строки, предназначенный для перебора содержимого веб-приложений. Он позволяет автоматизировать процесс фаззинга, тем самым обнаруживая скрытые файлы и директории, а также проверяя различные параметры URL и заголовки HTTP.*
+1. Скачаем релиз утилиты FFUF для Windows: ffuf_2.1.0_windows_amd64.zip
+2. Извлечем ffuf.exe и переместим его в папку C:\Tools\
+3. Добавим в переменные среды ( переменную Path ) путь до этой папки C:\Tools\
+4. Перезапустим PowerShell
+5. Скачаем [словарь для перебора](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/common.txt)
+6. Выполним команду
+   ```
+   ffuf -w C:\Users\User\Downloads\common.txt -u https://dshi46.ru/FUZZ
+   ```
+7. В результате у нас есть доступ к странице для входа в аккаунт админа, но это не является уязимостью
+8. А также на сервере существуют папки documents, stat и images к которым доступа нет
+9. С помощью команд
+    ```
+    ffuf -u https://dshi46.ru/stat/FUZZ -w "C:\Users\User\Downloads\common.txt" -mc 200,403 -t 10
+    ffuf -u https://dshi46.ru/documents/FUZZ -w "C:\Users\User\Downloads\common.txt" -mc 200,403 -t 10
+    ffuf -u https://dshi46.ru/documents/FUZZ -w "C:\Users\User\Downloads\common.txt" -mc 200,403 -t 10
+    ```
+   проверили содержимое каталогов и код у файлов. Ничего лишнего вне рабочего каталога index нам не оказалось доступным.
