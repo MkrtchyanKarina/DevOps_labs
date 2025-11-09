@@ -11,3 +11,6 @@
      ![1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-49-53.png)
    - Добавим в автозагрузку и запустим:
      ![2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-57-26.png)
+2. Создадим папку для лабораторной работы, которая будет содержать все файлы, необходимые нашим веб-сайтам/проектам:
+   - В ней будут содержаться два наших проекта ( сайта ) и папка для сертификата:
+     ![3](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-06-09.png)
