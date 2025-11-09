@@ -26,3 +26,59 @@
 4. Настроим права доступа
    - Все файлы в lab1/dogs и lab1/cats теперь принадлежат пользователю www-data (под которым работает nginx), chmod устанавливает права для владельца на любые действия, для остальных групп на чтение и выполнение файлов в папке lab1:
      ![9](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-42-16.png)
+
+5. Сгенерируем самоподписные ключи для обоих проектов соответственно с помощбю команд:
+   ```
+   sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+    -keyout dogs.key -out dogs.crt \
+    -subj "/C=US/ST=State/L=City/O=Organization/CN=dogs.local"
+   ```
+   ```
+   sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+    -keyout cats.key -out cats.crt \
+    -subj "/C=US/ST=State/L=City/O=Organization/CN=cats.local"
+   ```
+   
+6. Создадим файлы конфигурации для проектов:
+   - Для собак:
+     ![10](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-07-23.png)
+   - Для кошек
+     ```
+     # HTTP redirect to HTTPS
+      server {
+       listen 80;
+       server_name cats.local www.cats.local;
+       return 301 https://$server_name$request_uri;
+      }
+
+      # HTTPS server
+      server {
+       listen 443 ssl;
+       server_name cats.local www.cats.local;
+
+       # SSL configuration
+       ssl_certificate /home/karina/lab1/ssl/cats.crt;
+       ssl_certificate_key /home/karina/lab1/ssl/cats.key;
+
+       # Security headers
+       add_header Strict-Transport-Security "max-age=31536000" always;
+
+       # Root location
+       location / {
+           root /home/karina/lab1/cats;
+           index index.html index.htm;
+           try_files $uri $uri/ =404;
+       }
+
+       # Alias example
+       location /breeds/ {
+           alias /home/karina/lab1/cats/breeds/;
+       }
+   }
+   ```
+
+7. Удалим дефолтный файл конфигураций и активируем виртуальные хосты:
+   ```
+   sudo rm -f /etc/nginx/sites-enabled/default
+   ```
+   
