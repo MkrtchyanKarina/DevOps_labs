@@ -82,9 +82,7 @@
    ```
 
 7. Удалим дефолтный файл конфигураций и активируем виртуальные хосты:
-   ```
-   sudo rm -f /etc/nginx/sites-enabled/default
-   ```
+   `sudo rm -f /etc/nginx/sites-enabled/default`
    ![11](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-21-20.png)
 
 8. Добавим хосты для наших сайтов:
