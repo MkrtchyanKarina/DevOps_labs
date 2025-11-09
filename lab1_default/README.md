@@ -131,3 +131,6 @@
    - И собачки:
     ![22](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-11.png)
     ![23](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-16.png)
+
+Я, если что люблю и кошек, и собак, но в душе я ощущаю себя котогусеницей.
+![cat_caterpillar](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/%D0%BA%D0%BE%D1%82%D0%BE%D0%B3%D1%83%D1%81%D0%B5%D0%BD%D0%B8%D1%86%D0%B0.jpg)
