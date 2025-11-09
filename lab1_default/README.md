@@ -9,3 +9,5 @@
 1. Установим Nginx
    - Обновим информацию о пакетах и установим Nginx:
      ![1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-49-53.png)
+   - Добавим в автозагрузку и запустим:
+     ![2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-57-26.png)
