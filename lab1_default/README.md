@@ -14,3 +14,6 @@
 2. Создадим папку для лабораторной работы, которая будет содержать все файлы, необходимые нашим веб-сайтам/проектам:
    - В ней будут содержаться два наших проекта ( сайта ) и папка для сертификата:
      ![3](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-06-09.png)
+3. Создадим файлы index.html в проектах, а также папку breeds с файлами, соответствующими названию пород собачек и кошечек:
+   - Для проекта с собачками:
+     ![4](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-17-21.png)
