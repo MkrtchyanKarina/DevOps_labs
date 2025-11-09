@@ -28,7 +28,7 @@
 4. Настроим права доступа
    - Все файлы в lab1/dogs и lab1/cats теперь принадлежат пользователю www-data (под которым работает nginx), chmod устанавливает права для владельца на любые действия, для остальных групп на чтение и выполнение файлов в папке lab1:
      ![9](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-42-16.png)
-<br>
+
 5. Сгенерируем самоподписные ключи для обоих проектов соответственно с помощбю команд:
    ```
    sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
@@ -40,7 +40,7 @@
     -keyout cats.key -out cats.crt \
     -subj "/C=US/ST=State/L=City/O=Organization/CN=cats.local"
    ```
-<br>
+
 6. Создадим файлы конфигурации для проектов:
    - Для собак:
      <br>
@@ -80,32 +80,32 @@
        }
    }
    ```
-<br>
+
 7. Удалим дефолтный файл конфигураций и активируем виртуальные хосты:
    ```
    sudo rm -f /etc/nginx/sites-enabled/default
    ```
    ![11](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-21-20.png)
-<br>
+
 8. Добавим хосты для наших сайтов:
    ![12](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-17-02.png)
    ![13](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-16-40.png)
-<br>
+
 9. Проверим ошибки в файлах конфигурации
     ![14](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-00.png)
-<br>
+
 10. Перезапустим Nginx и проверим его статус:
     ![15](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-51.png)
-<br>
+
 11. Содержимое файлов не считывалась, поэтому я переустановила права доступа ко всем вложенным каталогам:
     ![16](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-44-50.png)
-<br>
+
 12. Все получилось! Можем считать содержимое фалов, а также просмтореть их в браузере:
     ![17](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-52.png)
     ![18](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-41.png)
     - Также добавим кодировку для русского языка
     ![19](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-34-47.png)
-<br>
+
 13. Откроем сайты в браузере:
     - Кошечки:
     ![20](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-49-53.png)
