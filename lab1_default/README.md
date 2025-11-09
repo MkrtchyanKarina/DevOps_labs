@@ -81,4 +81,30 @@
    ```
    sudo rm -f /etc/nginx/sites-enabled/default
    ```
-   
+   ![11](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-21-20.png)
+
+8. Добавим хосты для наших сайтов:
+   ![12](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-17-02.png)
+   ![13](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-16-40.png)
+
+9. Проверим ошибки в файлах конфигурации
+    ![14](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-00.png)
+
+10. Перезапустим Nginx и проверим его статус:
+    ![15](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-51.png)
+
+11. Содержимое файлов не считывалась, поэтому я переустановила права доступа ко всем вложенным каталогам:
+    ![16](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-44-50.png)
+
+12. Все получилось! Можем считать содержимое фалов, а также просмтореть их в браузере:
+    ![17](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-52.png)
+    ![18](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-41.png)
+    - Также добавим кодировку для русского языка
+    ![19](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-34-47.png)
+13. Откроем сайты в браузере:
+    - Кошечки:
+    ![20](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-49-53.png)
+    ![21](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-05.png)
+   - И собачки:
+    ![22](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-11.png)
+    ![23](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-16.png)
