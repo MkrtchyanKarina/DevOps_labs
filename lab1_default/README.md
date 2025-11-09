@@ -6,15 +6,19 @@
 > - обслуживания серверов, на которые поступает много запросов одновременно;
 > - в качестве почтового сервера или для распределения нагрузки на серверную часть;
 > - SSL/TLS терминация: Nginx способен выполнять терминацию SSL/TLS, обеспечивая шифрование и дешифрование данных между клиентами и серверами. Это снижает нагрузку на бэкэнд-серверы и улучшает безопасность.
+
+
 1. Установим Nginx
    - Обновим информацию о пакетах и установим Nginx:
      ![1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-49-53.png)
    - Добавим в автозагрузку и запустим:
      ![2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-57-26.png)
 
+
 2. Создадим папку для лабораторной работы, которая будет содержать все файлы, необходимые нашим веб-сайтам/проектам:
    - В ней будут содержаться два наших проекта ( сайта ) и папка для сертификата:
      ![3](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-06-09.png)
+
 
 3. Создадим файлы index.html в проектах, а также папку breeds с файлами, соответствующими названию пород собачек и кошечек:
    - Для проекта с собачками:
@@ -25,9 +29,11 @@
      ![7](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-36-59.png)
      ![8](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-36-02.png)
 
+
 4. Настроим права доступа
    - Все файлы в lab1/dogs и lab1/cats теперь принадлежат пользователю www-data (под которым работает nginx), chmod устанавливает права для владельца на любые действия, для остальных групп на чтение и выполнение файлов в папке lab1:
      ![9](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-42-16.png)
+
 
 5. Сгенерируем самоподписные ключи для обоих проектов соответственно с помощбю команд:
    ```
@@ -40,6 +46,7 @@
     -keyout cats.key -out cats.crt \
     -subj "/C=US/ST=State/L=City/O=Organization/CN=cats.local"
    ```
+
 
 6. Создадим файлы конфигурации для проектов:
    - Для собак:
@@ -81,24 +88,32 @@
         }
       }
       ```
+
+     
 7. Удалим дефолтный файл конфигураций и активируем виртуальные хосты:
    ```
    sudo rm -f /etc/nginx/sites-enabled/default
    ```
    ![11](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-21-20.png)
 
+
+
 9. Добавим хосты для наших сайтов:
    ![12](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-17-02.png)
    ![13](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-16-40.png)
 
+
 10. Проверим ошибки в файлах конфигурации
     ![14](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-00.png)
+
 
 11. Перезапустим Nginx и проверим его статус:
     ![15](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-51.png)
 
+
 12. Содержимое файлов не считывалась, поэтому я переустановила права доступа ко всем вложенным каталогам:
     ![16](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-44-50.png)
+
 
 13. Все получилось! Можем считать содержимое фалов, а также просмтореть их в браузере:
     ![17](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-52.png)
@@ -106,11 +121,13 @@
     - Также добавим кодировку для русского языка
     ![19](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-34-47.png)
 
+
 14. Откроем сайты в браузере:
     - Кошечки:
     ![20](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-49-53.png)
     ![21](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-05.png)
-   <br>
+
+
    - И собачки:
     ![22](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-11.png)
     ![23](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-16.png)
