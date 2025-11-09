@@ -1,4 +1,4 @@
-# Лабораторная работа №1 - обычная
+# Лабораторная работа №1 - обычная (basic :nail_care:)
 ## Настройка Nginx
 > Nginx ― это программное обеспечение с открытым исходным кодом, которое позволяет создавать веб-сервер. 
 > Nginx обслуживает соединения, обрабатывает запросы, которые поступают к серверу, а также используется:
@@ -12,19 +12,19 @@
 
 ![0](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%20%D0%B1%D0%B5%D1%81%D1%8B.jpg)
 
-1. Установим Nginx
+**1. Установим Nginx**
    - Обновим информацию о пакетах и установим Nginx:
      ![1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-49-53.png)
    - Добавим в автозагрузку и запустим:
      ![2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-57-26.png)
 
 
-2. Создадим папку для лабораторной работы, которая будет содержать все файлы, необходимые нашим веб-сайтам/проектам:
+**2. Создадим папку для лабораторной работы, которая будет содержать все файлы, необходимые нашим веб-сайтам/проектам:**
    - В ней будут содержаться два наших проекта ( сайта ) и папка для сертификата:
      ![3](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-06-09.png)
 
 
-3. Создадим файлы index.html в проектах, а также папку breeds с файлами, соответствующими названию пород собачек и кошечек:
+**3. Создадим файлы index.html в проектах, а также папку breeds с файлами, соответствующими названию пород собачек и кошечек:**
    - Для проекта с собачками:
      ![4](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-17-21.png)
      ![5](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-25-50.png)
@@ -34,12 +34,12 @@
      ![8](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-36-02.png)
 
 
-4. Настроим права доступа
+**4. Настроим права доступа**
    - Все файлы в lab1/dogs и lab1/cats теперь принадлежат пользователю www-data (под которым работает nginx), chmod устанавливает права для владельца на любые действия, для остальных групп на чтение и выполнение файлов в папке lab1:
      ![9](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-42-16.png)
 
 
-5. Сгенерируем самоподписные ключи для обоих проектов соответственно с помощью команд:
+**5. Сгенерируем самоподписные ключи для обоих проектов соответственно с помощью команд:**
    ```
    sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout dogs.key -out dogs.crt \
@@ -52,7 +52,7 @@
    ```
 
 
-6. Создадим файлы конфигурации для проектов:
+**6. Создадим файлы конфигурации для проектов:**
    - Для собак:
 
      ![10](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-07-23.png)
@@ -94,7 +94,7 @@
       ```
 
      
-7. Удалим дефолтный файл конфигураций и активируем виртуальные хосты:
+**7. Удалим дефолтный файл конфигураций и активируем виртуальные хосты:**
    ```
    sudo rm -f /etc/nginx/sites-enabled/default
    ```
@@ -102,31 +102,31 @@
 
 
 
-9. Добавим хосты для наших сайтов:
+**8. Добавим хосты для наших сайтов:**
    ![12](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-17-02.png)
    ![13](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-16-40.png)
 
 
-10. Проверим ошибки в файлах конфигурации
+**9. Проверим ошибки в файлах конфигурации**
     ![14](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-00.png)
 
 
-11. Перезапустим Nginx и проверим его статус:
+**10. Перезапустим Nginx и проверим его статус:**
     ![15](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-51.png)
 
 
-12. Содержимое файлов не считывалась, поэтому я переустановила права доступа ко всем вложенным каталогам:
+**11. Содержимое файлов не считывалась, поэтому я переустановила права доступа ко всем вложенным каталогам:**
     ![16](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-44-50.png)
 
 
-13. Все получилось! Можем считать содержимое фалов, а также просмтореть их в браузере:
+**12. Все получилось! Можем считать содержимое фалов, а также просмтореть их в браузере:**
     ![17](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-52.png)
     ![18](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-41.png)
     - Также добавим кодировку для русского языка
     ![19](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-34-47.png)
 
 
-14. Откроем сайты в браузере:
+**13. Откроем сайты в браузере:**
     - Кошечки:
     ![20](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-49-53.png)
     ![21](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-05.png)
@@ -136,5 +136,5 @@
     ![22](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-11.png)
     ![23](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-16.png)
 
-Я, если что люблю и кошек, и собак, но в душе я ощущаю себя котогусеницей.
+*Я, если что люблю и кошек, и собак, но в душе я ощущаю себя котогусеницей.*
 ![cat_caterpillar](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/%D0%BA%D0%BE%D1%82%D0%BE%D0%B3%D1%83%D1%81%D0%B5%D0%BD%D0%B8%D1%86%D0%B0.jpg)
