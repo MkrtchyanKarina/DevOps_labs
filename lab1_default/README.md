@@ -8,6 +8,10 @@
 > - SSL/TLS терминация: Nginx способен выполнять терминацию SSL/TLS, обеспечивая шифрование и дешифрование данных между клиентами и серверами. Это снижает нагрузку на бэкэнд-серверы и улучшает безопасность.
 
 
+Будем делать файлы ( пэт-проекты ) о кошечках и собачках :fire: :kissing_cat:
+
+![0](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%20%D0%B1%D0%B5%D1%81%D1%8B.jpg)
+
 1. Установим Nginx
    - Обновим информацию о пакетах и установим Nginx:
      ![1](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2018-49-53.png)
@@ -35,7 +39,7 @@
      ![9](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-42-16.png)
 
 
-5. Сгенерируем самоподписные ключи для обоих проектов соответственно с помощбю команд:
+5. Сгенерируем самоподписные ключи для обоих проектов соответственно с помощью команд:
    ```
    sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout dogs.key -out dogs.crt \
