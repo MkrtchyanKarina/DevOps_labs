@@ -142,7 +142,7 @@
    ![18](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-41.png)
 
     
-    - Также добавим кодировку для русского языка
+   - Также добавим кодировку для русского языка
 
     
    ![19](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-34-47.png)
@@ -151,13 +151,17 @@
 **13. Откроем сайты в браузере:**
 
    - Кошечки:
-    ![20](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-49-53.png)
-    ![21](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-11-10%20165612.png)
+
+     
+   ![20](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-49-53.png)
+   ![21](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-11-10%20165612.png)
 
 
    - И собачки:
-    ![22](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-11.png)
-    ![23](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-16.png)
+
+     
+   ![22](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-11.png)
+   ![23](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-16.png)
 
 *Я, если что люблю и кошек, и собак, но в душе я ощущаю себя котогусеницей.*
 ![cat_caterpillar](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/%D0%BA%D0%BE%D1%82%D0%BE%D0%B3%D1%83%D1%81%D0%B5%D0%BD%D0%B8%D1%86%D0%B0.jpg)
