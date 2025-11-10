@@ -76,4 +76,8 @@ curl -Uri "https://dshi46.ru/..%2f..%2f..%2fetc%2fnginx%2fnginx.conf" | select -
 
    ![res6](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/res6.png)
 
+К сожалению или к счастью нам не удалось найти уязвимости в настройке сервера Nginx :pensive:
+
+
+Но мы все-равно молодцы ( наверное ) :innocent:
 ![meme2](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_extra/img/meme2.jpg)
