@@ -111,6 +111,8 @@
 
 
 **8. Добавим хосты для наших сайтов:**
+
+
    ![12](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-17-02.png)
    ![13](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-16-40.png)
 
@@ -118,32 +120,32 @@
 **9. Проверим ошибки в файлах конфигурации**
 
 
-    ![14](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-00.png)
+   ![14](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-00.png)
 
 
 **10. Перезапустим Nginx и проверим его статус:**
 
 
-    ![15](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-51.png)
+   ![15](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-51.png)
 
 
 **11. Содержимое файлов не считывалась, поэтому я переустановила права доступа ко всем вложенным каталогам:**
 
 
-    ![16](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-44-50.png)
+   ![16](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-44-50.png)
 
 
 **12. Все получилось! Можем считать содержимое фалов, а также просмтореть их в браузере:**
 
 
-    ![17](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-52.png)
-    ![18](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-41.png)
+   ![17](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-52.png)
+   ![18](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-41.png)
 
     
     - Также добавим кодировку для русского языка
 
     
-    ![19](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-34-47.png)
+   ![19](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-34-47.png)
 
 
 **13. Откроем сайты в браузере:**
