@@ -108,28 +108,41 @@
 
 
 **9. Проверим ошибки в файлах конфигурации**
+
+
     ![14](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-00.png)
 
 
 **10. Перезапустим Nginx и проверим его статус:**
+
+
     ![15](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-22-51.png)
 
 
 **11. Содержимое файлов не считывалась, поэтому я переустановила права доступа ко всем вложенным каталогам:**
+
+
     ![16](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-44-50.png)
 
 
 **12. Все получилось! Можем считать содержимое фалов, а также просмтореть их в браузере:**
+
+
     ![17](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-52.png)
     ![18](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-45-41.png)
+
+    
     - Также добавим кодировку для русского языка
+
+    
     ![19](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-34-47.png)
 
 
 **13. Откроем сайты в браузере:**
-    - Кошечки:
+
+   - Кошечки:
     ![20](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-49-53.png)
-    ![21](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2020-50-05.png)
+    ![21](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-11-10%20165612.png)
 
 
    - И собачки:
