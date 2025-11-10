@@ -36,6 +36,8 @@
 
      
    - Аналогично для сайта с кошками:
+
+     
      ![7](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-36-59.png)
      ![8](https://github.com/MkrtchyanKarina/DevOps_labs/blob/master/lab1_default/img/Screenshot%20from%202025-11-09%2019-36-02.png)
 
