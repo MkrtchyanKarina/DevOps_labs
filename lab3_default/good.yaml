@@ -1,0 +1,17 @@
+﻿image: python:3.12   # fixed version
+
+stages: [test, build]
+
+test:
+  stage: test
+  script:
+    - pip install -r requirements.txt
+    - pytest            # тесты останавливают pipeline
+
+build:
+  stage: build
+  script:
+    - echo "Deploying..."
+  needs: ["test"]
+
+# секреты - только в GitLab -> CI/CD Variables

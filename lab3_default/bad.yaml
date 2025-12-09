@@ -1,0 +1,13 @@
+﻿image: python:latest   # bad: latest
+
+stages: [build]
+
+variables:
+  SECRET_TOKEN: abc123   # bad: секрет в YAML
+
+build_and_deploy:
+  stage: build
+  script:
+    - pip install -r requirements.txt
+    - pytest || true      # bad: тесты игнорируются
+    - echo "Deploying..."
