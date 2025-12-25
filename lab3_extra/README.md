@@ -1,23 +1,24 @@
 # Воркшоп № 2. WhiteSpots и технологии DevSecOps
 ## Установка Auditor'а:
 1. Склонируем https://gitlab.inview.team/whitespots-public-fork/auditor.git
-2. Установить докер
-3. Перейти в папку auditor
-4. Выполнить docker compose up -d
+2. Установим докер
+3. Перейдем в папку auditor
+4. Выполним
+    > docker compose up -d
 
    
    <img width="1097" height="624" alt="image" src="https://github.com/user-attachments/assets/84e01c10-e111-441c-8a2a-059e33f16fc7" />
 
    
-6. Перейдите по адресу 127.0.0.1:8080 и сгенерируйте новый Access Token, сохраните его.
+5. Перейдите по адресу 127.0.0.1:8080 и сгенерируйте новый Access Token, сохраните его.
 
    
  <img width="547" height="365" alt="image" src="https://github.com/user-attachments/assets/0274a654-546f-40a0-a705-b8b1e141e401" />
 
  
-7. Добавьте этот токен в переменную ACCESS_TOKEN в .env файл в директории auditor.
+6. Добавим этот токен в переменную ACCESS_TOKEN в .env файл в директории auditor.
 
-8. Перезапустим контенеры
+7. Перезапустим контенеры
 
     
     <img width="457" height="270" alt="image" src="https://github.com/user-attachments/assets/09020c79-9ab4-4c5a-9d68-ddafde4809f3" />
