@@ -1,5 +1,6 @@
-# Воркшоп № 2. WhiteSpots и технологии DevSecOps
-## Установка Auditor'а:
+# Лабораторная №3 - со звёздочкой :star:
+## Воркшоп № 2. WhiteSpots и технологии DevSecOps
+### Установка Auditor'а:
 1. Склонируем https://gitlab.inview.team/whitespots-public-fork/auditor.git
 2. Установим докер
 3. Перейдем в папку auditor
@@ -10,7 +11,7 @@
    <img width="1097" height="624" alt="image" src="https://github.com/user-attachments/assets/84e01c10-e111-441c-8a2a-059e33f16fc7" />
 
    
-5. Перейдите по адресу 127.0.0.1:8080 и сгенерируйте новый Access Token, сохраните его.
+5. Перейдем по адресу 127.0.0.1:8080 и сгенерируем и сохраним новый Access Token
 
    
  <img width="547" height="365" alt="image" src="https://github.com/user-attachments/assets/0274a654-546f-40a0-a705-b8b1e141e401" />
@@ -30,7 +31,7 @@
 
    
 ## Установка AppSec Portal
-1. Склонировать https://gitlab.inview.team/whitespots-public-fork/appsec-portal.git
+1. Склонируем [репозиторий](https://gitlab.inview.team/whitespots-public-fork/appsec-portal.git)
 2. Выполним
    > ./set_vars.sh
 
@@ -116,4 +117,7 @@
 
 
 
-В итоге в IDE почему-то бесконечная загрузка :( 
+В итоге, в IDE почему-то висит бесконечная загрузка :( 
+Если есть ошибки на каком-то этапе, подскажите, пожалуйста, буду исправлять :pray:
+На воркшопе мы дошли до интеграции с IDE, и я подумала, что осталось только склонировать проверенный репозиторий :relaxed:
+Но произошли какие-то проблемы с IDEшкой... :pensive:
