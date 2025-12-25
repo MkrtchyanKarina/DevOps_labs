@@ -30,7 +30,7 @@
    <img width="1130" height="325" alt="image" src="https://github.com/user-attachments/assets/9d5e9e43-a3a9-4ccb-b783-e1226e9f8a65" />
 
    
-## Установка AppSec Portal
+### Установка AppSec Portal
 1. Склонируем [репозиторий](https://gitlab.inview.team/whitespots-public-fork/appsec-portal.git)
 2. Выполним
    > ./set_vars.sh
@@ -76,7 +76,7 @@
     <img width="962" height="280" alt="image" src="https://github.com/user-attachments/assets/8a214e86-a09d-4ac1-8d13-689ef7681207" />
 
 
-## Добавление репозиториев и сканирование
+### Добавление репозиториев и сканирование
 1. Добавим репозиторий
 
 
@@ -104,7 +104,7 @@
    <img width="748" height="741" alt="image" src="https://github.com/user-attachments/assets/348c5dff-b5aa-4543-a73d-d6cba080d7ec" />
    
 
-## Интеграция с IDE (Visual Studio)
+### Интеграция с IDE (Visual Studio)
 
 1. Установим расширение по ссылке: [Whitespots Application Security Portal](https://marketplace.visualstudio.com/items?itemName=Whitespots.whitespots-application-security)
 2. Настроим: необходимо указать URL портала и API токен, который можно получить в профиле пользователя
@@ -118,6 +118,12 @@
 
 
 В итоге, в IDE почему-то висит бесконечная загрузка :( 
+
+
 Если есть ошибки на каком-то этапе, подскажите, пожалуйста, буду исправлять :pray:
+
+
 На воркшопе мы дошли до интеграции с IDE, и я подумала, что осталось только склонировать проверенный репозиторий :relaxed:
+
+
 Но произошли какие-то проблемы с IDEшкой... :pensive:
