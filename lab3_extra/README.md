@@ -84,12 +84,25 @@
     
     <img width="491" height="310" alt="image" src="https://github.com/user-attachments/assets/5ea8b6e6-ebe1-430b-be9c-9c3325aba179" />
 
+    <img width="763" height="740" alt="image" src="https://github.com/user-attachments/assets/7baa627b-083f-46c5-8e17-f83b44b71823" />
+
+
 
 25. Добавили репозиторий с лабами :)
 
     
     <img width="410" height="346" alt="image" src="https://github.com/user-attachments/assets/5d38bdb9-312f-410e-bd77-f6a0e9754c9d" />
 
+   <img width="748" height="741" alt="image" src="https://github.com/user-attachments/assets/348c5dff-b5aa-4543-a73d-d6cba080d7ec" />
 
-    <img width="760" height="866" alt="image" src="https://github.com/user-attachments/assets/5e1a5281-cc06-4bce-9c75-e8b78e922119" />
 
+
+Интеграция с IDE (Visual Studio)
+
+1. Установим расширение по ссылке: [Whitespots Application Security Portal](https://marketplace.visualstudio.com/items?itemName=Whitespots.whitespots-application-security)
+2. Настроим: необходимо указать URL портала и API токен, который можно получить в профиле пользователя
+   <img width="706" height="913" alt="Снимок экрана 2025-12-25 155941" src="https://github.com/user-attachments/assets/437487c8-895f-4091-b1b9-fb53ec811a1a" />
+
+3. <img width="760" height="866" alt="image" src="https://github.com/user-attachments/assets/5e1a5281-cc06-4bce-9c75-e8b78e922119" />
+3.     <img width="760" height="866" alt="image" src="https://github.com/user-attachments/assets/5e1a5281-cc06-4bce-9c75-e8b78e922119" />
+4. 
