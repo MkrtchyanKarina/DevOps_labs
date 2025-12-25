@@ -94,8 +94,12 @@
 
     
     <img width="410" height="346" alt="image" src="https://github.com/user-attachments/assets/5d38bdb9-312f-410e-bd77-f6a0e9754c9d" />
+    
 
    <img width="748" height="741" alt="image" src="https://github.com/user-attachments/assets/348c5dff-b5aa-4543-a73d-d6cba080d7ec" />
+
+
+   <img width="760" height="866" alt="image" src="https://github.com/user-attachments/assets/5e1a5281-cc06-4bce-9c75-e8b78e922119" />
 
 
 
@@ -108,7 +112,8 @@
    <img width="706" height="913" alt="Снимок экрана 2025-12-25 155941" src="https://github.com/user-attachments/assets/437487c8-895f-4091-b1b9-fb53ec811a1a" />
 
 
-<img width="760" height="866" alt="image" src="https://github.com/user-attachments/assets/5e1a5281-cc06-4bce-9c75-e8b78e922119" />
+<img width="321" height="308" alt="Снимок экрана 2025-12-25 162508" src="https://github.com/user-attachments/assets/76f338a7-4d2d-4a19-91cb-ea5587c95627" />
+
 
 
 В итоге в IDE почему-то бесконечная загрузка :( 
